@@ -7,13 +7,18 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-<context:annotation-config/>
-<bean class="com.springcore.auto.wire.annotation.Address" name="address">
-	<property name="street" value="No.5 Street"></property>
-	<property name="city" value="Delhi"></property>
-</bean>
-<!-- <bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="byName"/>
- -->
- <bean class="com.springcore.auto.wire.annotation.Emp" name="emp1" />
+	<context:annotation-config />
+	<bean class="com.springcore.auto.wire.annotation.Address"
+		name="address">
+		<property name="street" value="No.5 Street"></property>
+		<property name="city" value="Delhi"></property>
+	</bean>
+	<bean class="com.springcore.auto.wire.annotation.Address"
+		name="address1">
+		<property name="street" value="No.6 Street"></property>
+		<property name="city" value="New Delhi"></property>
+	</bean>
+	<!-- <bean class="com.springcore.auto.wire.Emp" name="emp1" autowire="byName"/> -->
+	<bean class="com.springcore.auto.wire.annotation.Emp" name="emp1" />
 
 </beans>

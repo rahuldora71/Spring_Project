@@ -7,9 +7,17 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+    
+     <!-- StandAlon Collection -->
+     
+     
+     
+     
+     
 	<bean name="emp1" class="com.springcore.collections.Emp">
 		<property name="nameString" value="Rajesh"></property>
 
+<!-- Local Properties -->
 		<property name="phoneList">
 			<list>
 				<value>584565</value>
